@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="./css/styles2.css">
+  </head>
+  <body>
+    <div id="container">
+        <h1>CRUD Operations</h1>
+        <div id="input-container">
+            <input type="text" id="name-input" placeholder="Enter name">
+            <input type="email" id="email-input" placeholder="Enter email">
+            <button id="add-btn">Add</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Math Facilitator</th>
+                    <th>Lead Comments</th>
+                    <th>Feedback</th> <!-- Rename "Lead Comments" to "Feedback" -->
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+        <div id="update-container">
+            <input type="text" id="update-name-input" readonly>
+            <input type="text" id="update-feedback-input" placeholder="Edit Feedback">
+            <button id="update-btn">Update Feedback</button>
+            <button id="cancel-btn">Cancel</button>
+          </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
